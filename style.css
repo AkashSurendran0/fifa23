@@ -1,0 +1,1093 @@
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+.header{
+    width: 100%;
+    height: 40px;
+    background: #1c1f26;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+#icon1{
+    color: rgb(213, 213, 213);
+    size: 25px;
+    width: 20px;
+    padding: 0 40px 0 0;
+    cursor: pointer;
+}
+#icon2{
+    color: rgb(213, 213, 213);
+    size: 25px;
+    padding: 0 40px 0 0;
+    cursor: pointer;
+}
+#icon1:hover{
+    color: #fff;
+}
+#icon2:hover{
+    color: #fff;
+}
+.menu{
+    width: 100%;
+    height: 60px;
+    position: sticky;
+    top: 10px;
+    display: flex;
+    flex-direction: row;
+    z-index: 2;
+    background: rgb(255, 255, 255);
+}
+.logo{
+    width: 245px;
+    height: 60px;
+    background: white;
+    text-align: center;
+}
+.links{
+    flex-grow: 1;
+    height: 60px;
+    font-size: 17px;
+    font-family: Gadugi;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+.logo-fifa{
+    width: 57%;
+    height: 59px;
+}
+.about{
+    height: 60px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px ;
+    position: absolute;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.about:hover{
+    color: #FF5E0C;
+}
+.about:hover .glyphicon{
+    color: #FF5E0C;
+    transform: rotate(180deg);
+}
+.glyphicon{
+    color: black;
+    font-size: 10px;
+    transition: 0.2s;
+}
+/* .glyphicon:hover{
+    transform: rotate(180deg);
+} */
+.features{
+    height: 60px;
+    width: 102px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px ;
+    position: absolute;
+    margin-left: 105px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.features:hover{
+    color: #FF5E0C;
+}
+.features:hover .glyphicon{
+    color: #FF5E0C;
+    transform: rotate(180deg);
+}
+.ulti-team{
+    height: 60px;
+    width: 153px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px ;
+    position: absolute;
+    margin-left: 225px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.ulti-team:hover{
+    color: #FF5E0C;
+}
+.ulti-team:hover .glyphicon{
+    color: #FF5E0C;
+    transform: rotate(180deg);
+}
+.community{
+    height: 60px;
+    width: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px ;
+    position: absolute;
+    margin-left: 405px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.community:hover{
+    color: #FF5E0C;
+}
+.community:hover .glyphicon{
+    color: #FF5E0C;
+    transform: rotate(180deg);
+}
+.news-media{
+    height: 60px;
+    width: 145px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px ;
+    position: absolute;
+    margin-left: 555px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.news-media:hover{
+    color: #FF5E0C;
+}
+.news-media:hover .glyphicon{
+    color: #FF5E0C;
+    transform: rotate(180deg);
+}
+.fifa-global{
+    height: 60px;
+    width: 163px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px ;
+    position: absolute;
+    margin-left: 725px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.fifa-global:hover{
+    color: #FF5E0C;
+}
+.about:hover .about-dropdown{
+    display: flex;
+}
+.about .about-dropdown{
+    background: rgb(255, 255, 255, .8);
+    height: 300px;
+    width: 240px;
+    display: none;
+    padding: 45px 30px ;
+    position: absolute;
+    cursor: pointer;
+    transition: 0.2s;
+    top: 105%;
+    border-radius: 5px;
+    font-size: 17px;
+    font-family: Gadugi;
+    color: black;
+    left: -25px;
+    flex-direction: column;
+}
+.about-dropdown a{
+    padding: 3px 0;
+    text-decoration: none;
+    color: black;
+}
+.about-dropdown a:hover{
+    color: #FF5E0C;
+    text-decoration: none;
+}
+.underline{
+    color: black;
+    height: 10px;
+    width: 195px;
+    margin: 0 0 10px 0;
+}
+.features:hover .features-dropdown{
+    display: flex;
+}
+.features .features-dropdown{
+    background: rgb(255, 255, 255, .8);
+    height: 270px;
+    width: 273px;
+    display: none;
+    padding: 25px 30px ;
+    position: absolute;
+    cursor: pointer;
+    transition: 0.2s;
+    top: 105%;
+    border-radius: 5px;
+    font-size: 17px;
+    font-family: Gadugi;
+    color: black;
+    left: -25px;
+    flex-direction: column;
+}
+.features-dropdown a{
+    padding: 3px 0;
+    text-decoration: none;
+    color: black;
+}
+.features-dropdown a:hover{
+    color: #FF5E0C;
+    text-decoration: none;
+}
+.ulti-team:hover .ulti-team-dropdown{
+    display: flex;
+}
+.ulti-team .ulti-team-dropdown{
+    background: rgb(255, 255, 255, .8);
+    height: 480px;
+    width: 273px;
+    display: none;
+    padding: 25px 30px ;
+    position: absolute;
+    cursor: pointer;
+    transition: 0.2s;
+    top: 105%;
+    border-radius: 5px;
+    font-size: 17px;
+    font-family: Gadugi;
+    color: black;
+    left: -25px;
+    flex-direction: column;
+}
+.ulti-team-dropdown a{
+    padding: 3px 0;
+    text-decoration: none;
+    color: black;
+}
+.ulti-team-dropdown a:hover{
+    color: #FF5E0C;
+    text-decoration: none;
+}
+.community:hover .community-dropdown{
+    display: flex;
+}
+.community .community-dropdown{
+    background: rgb(255, 255, 255, .8);
+    height: 175px;
+    width: 273px;
+    display: none;
+    padding: 25px 30px ;
+    position: absolute;
+    cursor: pointer;
+    transition: 0.2s;
+    top: 105%;
+    border-radius: 5px;
+    font-size: 17px;
+    font-family: Gadugi;
+    color: black;
+    left: -25px;
+    flex-direction: column;
+}
+.community-dropdown a{
+    padding: 3px 0;
+    text-decoration: none;
+    color: black;
+}
+.community-dropdown a:hover{
+    color: #FF5E0C;
+    text-decoration: none;
+}
+.news-media:hover .news-media-dropdown{
+    display: flex;
+}
+.news-media .news-media-dropdown{
+    background: rgb(255, 255, 255, .8);
+    height: 150px;
+    width: 273px;
+    display: none;
+    padding: 25px 30px ;
+    position: absolute;
+    cursor: pointer;
+    transition: 0.2s;
+    top: 105%;
+    border-radius: 5px;
+    font-size: 17px;
+    font-family: Gadugi;
+    color: black;
+    left: -25px;
+    flex-direction: column;
+}
+.news-media-dropdown a{
+    padding: 3px 0;
+    text-decoration: none;
+    color: black;
+}
+.news-media-dropdown a:hover{
+    color: #FF5E0C;
+    text-decoration: none;
+}
+.sam-kerr{
+    width: 100%;
+    height: 430px;
+    position: relative;
+    z-index: 1;
+    background-image: url(images/samkerr.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.leftside-samkerr{
+    width: 50%;
+    height: 430px;
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-left: 75px;
+    flex-direction: column;
+    padding-left: 125px;
+}
+.fifa-name{
+    width: 85%;
+}
+br{
+    margin: 0;
+}
+.play-fifa{
+    font-family: Gadugi;
+    font-size: 45px;
+    font-weight: 1000;
+    line-height: 1.1;
+    padding-left: 10px;
+    color: black;
+}
+.experience-the{
+    font-family: Gadugi;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.1;
+    padding-left: 10px;
+    color: black;
+}
+.moving{
+    width: auto;
+    height: 70px;
+    background: rgb(173, 131, 22);
+    display: flex;
+    align-items: center;
+}
+.moving img{
+    width: 14%;
+    padding: 0 30px;
+}
+.moving span{
+    color: white;
+    font-size: 20px;
+    font-family: Gadugi;
+    font-weight: 1000;
+    padding: 0 30px;
+    text-wrap: nowrap;
+}
+.moving-items{
+    animation: 25s slide infinite linear;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+@keyframes slide {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    } 
+}
+.fut-heroes{
+    width: 100%;
+    height: 430px;
+    background-image: url(images/futbackground.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+.icons{
+    width: 65%;
+    float: left;
+    display: flex;
+    align-items: center;
+}
+.icons-para{
+    width: 35%;
+    height: 430px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.icons img{
+    width: 145%;
+}
+.heroes{
+    font-family: Gadugi;
+    font-size: 45px;
+    font-weight: 1000;
+    line-height: 1.1;
+    padding-left: 10px;
+}
+.heroes-para{
+    font-family: Gadugi;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.6;
+    padding-left: 10px;
+}
+.meet-heroes{
+    height: 60px;
+    width: 195px;
+    background: rgb(255, 255, 255, 0);    
+    border: 2px solid white;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    transition: 0.3s;
+}
+.meet-heroes:hover{
+    height: 70px;
+    width: 205px;
+}
+.new-fifa{
+    width: 100%;
+    height: 950px;
+    background-image: url(images/f23-hmpg-section-xl.png.adapt.1920w.png);
+    background-position: center;
+    background-size: cover;
+}
+.heading{
+    height: 230px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heading p{
+    font-family: Gadugi;
+    font-size: 45px;
+    font-weight: 1000;
+    line-height: 1.1;
+    padding-left: 10px;
+}
+.left-image{
+    width: 50%;
+    height: 285px;
+    float: left;
+    position: relative;
+}
+.right-image{
+    width: 50%;
+    height: 285px;
+    float: left;
+    position: relative;
+}
+.left-image img{
+    position: absolute;
+    height: 285px;
+    right: 10px;
+}
+.right-image img{
+    position: absolute;
+    height: 285px;
+    left: 10px;
+}
+.left-paraside{
+    width: 50%;
+    height: 400px;
+    float: left;
+    position: relative;
+}
+.right-paraside{
+    width: 50%;
+    height: 400px;
+    float: left;
+    position: relative;
+}
+.left-para{
+    width: 62%;
+    height: 400px;
+    position: absolute;
+    right: 0;
+}
+.right-para{
+    left: 30px;
+    width: 65%;
+    height: 400px;
+    position: absolute;
+}
+.left-head{
+    font-family: Gadugi;
+    font-size: 29px;
+    font-weight: 1000;
+    line-height: 1.1;
+    padding-left: 10px;
+    color: black;
+    padding-top: 30px;
+}
+.left-body{
+    font-family: Gadugi;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.6;
+    padding-left: 10px;
+    color: black;
+}
+.left-paraside button{
+    font-family: Gadugi;
+    height: 60px;
+    width: 195px;
+    background: rgb(255, 255, 255, 0);    
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    transition: 0.3s;
+    bottom: 15px;
+    position: absolute;
+    color: black;
+}
+.right-paraside button{
+    font-family: Gadugi;
+    position: absolute;
+    height: 60px;
+    width: 195px;
+    background: rgb(255, 255, 255, 0);    
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    transition: 0.3s;
+    color: black;
+}
+/* .left-paraside button:hover{
+    height: 70px;
+    width: 205px;
+}
+.right-paraside button:hover{
+    height: 70px;
+    width: 205px;
+} */
+ .hypermotion{
+    width: 100%;
+    height: 500px;
+    background-image: url(images/hypermotion-background.jpg);
+    /* background-position: center; */
+    background-size: cover;
+}
+.hyper-img{
+    height: 47%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 90px;
+}
+.hyper-text{
+    height: 53%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    color: white;
+}
+.hyper-text button{
+    font-family: Gadugi;
+    height: 60px;
+    width: 195px;
+    background: rgb(255, 255, 255, 0);    
+    border: 2px solid white;
+    border-radius: 5px;
+    font-size: 20px;
+    transition: 0.3s;
+    color: white;
+    margin: 20px 0 20px 0;
+}
+.more-in-fifa{
+    width: 100%;
+    height: 650px;
+    background: rgb(255, 243, 225);
+}
+.unrivalled{
+    height: 575px;
+    width: 100%;
+    background-image: url(images/stadium-background.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+.unrivalled-main{
+    height: 260px;
+    width: 100%;
+}
+.unrivalled-para{
+    height: 40%;
+    text-align: center;
+}
+.unrivalled-logo{
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    animation: 20s slide linear infinite;
+}
+.unrivalled-link{
+    height: 30%;
+    text-align: center;
+
+}
+.unrivalled p{
+    color: white;
+}
+.unrivalled-link button{
+    font-family: Gadugi;
+    height: 60px;
+    width: 264px;
+    background: rgb(255, 255, 255, 0);    
+    border: 2px solid white;
+    border-radius: 5px;
+    font-size: 20px;
+    transition: 0.3s;
+    color: white;
+    margin: 20px 0 20px 0;
+}
+.unrivalled-link button:hover{
+    height: 70px;
+    width: 274px;
+}
+/* .a-league{
+    width: 5%;
+}
+.bundesliga{
+    width: 5%;
+}
+.champions{
+    width: 5%;
+} */
+ .unrivalled-logo img{
+    margin: 0 20px;
+ }
+ .unrivalled-logo :nth-child(1){
+    width: 3%;
+ }
+ .unrivalled-logo :nth-child(2){
+    width: 3%;
+ }
+ .unrivalled-logo :nth-child(3){
+    width: 3%;
+ }
+ .unrivalled-logo :nth-child(4){
+    width: 4%;
+ }
+ .unrivalled-logo :nth-child(5){
+    width: 3%;
+ }
+ .unrivalled-logo :nth-child(6){
+    width: 3%;
+ }
+ .unrivalled-logo :nth-child(7){
+    width: 5%;
+ }
+ .unrivalled-logo :nth-child(8){
+    width: 5%;
+ }
+ .unrivalled-logo :nth-child(9){
+    width: 2%;
+ }
+ .unrivalled-logo :nth-child(10){
+    width: 5%;
+ }
+ .unrivalled-logo :nth-child(11){
+    width: 5%;
+ }
+ .unrivalled-logo :nth-child(12){
+    width: 5%;
+ }
+ .unrivalled-logo :nth-child(13){
+    width: 4%;
+ }
+ .unrivalled-logo :nth-child(14){
+    width: 4%;
+ }
+ .unrivalled-logo :nth-child(15){
+    width: 2%;
+ }
+ .unrivalled-logo :nth-child(16){
+    width: 4%;
+ }
+ .unrivalled-logo :nth-child(17){
+    width: 3%;
+ }
+ .unrivalled-logo :nth-child(18){
+    width: 5%;
+ }
+ .unrivalled-logo :nth-child(19){
+    width: 3%;
+ }
+ .unrivalled-logo :nth-child(20){
+    width: 3%;
+ }
+ .unrivalled-logo :nth-child(21){
+    width: 3%;
+ }
+ .unrivalled-logo :nth-child(22){
+    width: 4%;
+ }
+ .unrivalled-logo :nth-child(23){
+    width: 3%;
+ }
+ .unrivalled-logo :nth-child(24){
+    width: 3%;
+ }
+ .unrivalled-logo :nth-child(25){
+    width: 5%;
+ }
+ .unrivalled-logo :nth-child(26){
+    width: 5%;
+ }
+ .unrivalled-logo :nth-child(27){
+    width: 2%;
+ }
+ .unrivalled-logo :nth-child(28){
+    width: 5%;
+ }
+ .unrivalled-logo :nth-child(29){
+    width: 5%;
+ }
+ .unrivalled-logo :nth-child(30){
+    width: 5%;
+ }
+ .unrivalled-logo :nth-child(31){
+    width: 4%;
+ }
+ .unrivalled-logo :nth-child(32){
+    width: 4%;
+ }
+ .unrivalled-logo :nth-child(33){
+    width: 2%;
+ }
+ .unrivalled-logo :nth-child(34){
+    width: 4%;
+ }
+ .unrivalled-logo :nth-child(35){
+    width: 3%;
+ }
+ .unrivalled-logo :nth-child(36){
+    width: 5%;
+ }
+.bottom-sam-kerr{
+    width: 100%;
+    height: 430px;
+    position: relative;
+    z-index: 1;
+    background-image: url(images/samkerr.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.hypermotion-bottom{
+    width: 100%;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 19px;
+    background: black;
+    color: white;
+}
+.point1{
+    height: 67px;
+    width: 100%;
+    background: #1c1f26;
+    display: flex;
+    color: white;
+    font-size: 19px;
+    align-items: center;
+    font-family: Gadugi;
+    padding-left: 220px;
+}
+.point2{
+    height: 67px;
+    width: 100%;
+    background: #1c1f26;
+    display: flex;
+    color: white;
+    font-size: 19px;
+    align-items: center;
+    font-family: Gadugi;
+    padding-left: 220px;
+}
+.point3{
+    height: 67px;
+    width: 100%;
+    background: #1c1f26;
+    display: flex;
+    color: white;
+    font-size: 19px;
+    align-items: center;
+    font-family: Gadugi;
+    padding-left: 220px;
+}
+.point2 a{
+    color: #FF5E0C;
+    text-decoration: none;
+}
+.point2 a:hover{
+    text-decoration: none;
+    color: #FF5E0C;
+}
+.point3 a{
+    color: #FF5E0C;
+    text-decoration: none;
+}
+.point3 a:hover{
+    text-decoration: none;
+    color: #FF5E0C;
+}
+.footer{
+    font-family: Gadugi;
+    font-size: 18px;
+    height: 384px;
+    width: 100%;
+    background: #232323;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.top{
+    height: 85px;
+    width: 1070px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.middle{
+    height: 85px;
+    width: 1070px;
+    display: flex;
+    justify-content: space-between;
+}
+.links-bottom{
+    font-family: Gadugi;
+    font-size: 16px;
+    text-wrap: nowrap;
+    padding: 23px 0px 0px 0px;
+}
+.links-bottom a{
+    padding: 0 20px 0 0px;
+    color: #767676;
+}
+.links-bottom a:hover{
+    text-decoration: none;
+    color: #FF5E0C;
+}
+.icons-social{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.icons-social a{
+    padding: 25px 0 0 25px;
+    color: white;
+    font-size: 23px;
+    transition: .2s;
+}
+.icons-social a:hover{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+.footer hr{
+    column-rule: #767676;
+    width: 1065px;
+}
+.bottom{    
+    height: 150px;
+    width: 1070px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bottom img:nth-child(1){
+    width: 7%;
+}
+.bottom img:nth-child(2){
+    width: 6%;
+}
+.final{
+    height: 270px;
+    width: 100%;
+    display: flex;
+}
+.left-final{
+    height: 270px;
+    width: 21%;
+    position: relative;
+}
+.middle-final{
+    height: 270px;
+    width: 52%;
+}
+.right-final{
+    height: 270px;
+    width: 27%;
+    position: relative;
+}
+.right-final img{
+    position: absolute;
+    width: 35%;
+    bottom: 50px;
+    left: 80px;
+}
+.left-final img{
+    position: absolute;
+    width: 22%;
+    right: 25px;
+    top: 25px;
+}
+.middle-final-top{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.middle-final-top a{
+    font-family: Gadugi;
+    font-size: 19px;
+    color: black;
+    padding: 20px 30px 0 0;
+    text-wrap: nowrap;
+}
+.middle-final-top a:hover{
+    text-decoration: none;
+    color: black;
+}
+.middle-final-bottom{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    font-family: Gadugi;
+    font-size: 15px;
+    flex-wrap: wrap;
+    padding: 25px 0 0 0 ;
+}
+.middle-final-bottom a{
+    text-wrap: nowrap;
+    padding: 0 20px 0 0;
+    color: black;
+    line-height: 0px;
+}
+.middle-final-bottom a:hover{
+    text-decoration: none;
+    color: black;
+}
+.break-line{
+    width: 100%;
+}
+.rem-body{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+}
+.scroll-body{
+    width: 80%;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+    overflow-x: scroll;
+}
+.box1{
+    background: #1c1f26;
+    width: 352px;
+    height: 220px;
+    position: absolute;
+    left: 20px;
+}
+.box2{
+    background: #1c1f26;
+    width: 352px;
+    height: 220px;
+    position: absolute;
+    left: 392px;
+}
+.box3{
+    background: #1c1f26;
+    width: 352px;
+    height: 220px;
+    position: absolute;
+    left: 764px;
+}
+.box4{
+    background: #1c1f26;
+    width: 352px;
+    height: 220px;
+    position: absolute;
+    left: 1136px;
+}
+.box5{
+    background: #1c1f26;
+    width: 352px;
+    height: 220px;
+    position: absolute;
+    left: 1508px;
+}
+.box6{
+    background: #1c1f26;
+    width: 352px;
+    height: 220px;
+    position: absolute;
+    left: 1880px;
+}
+.box7{
+    background: #1c1f26;
+    width: 352px;
+    height: 220px;
+    position: absolute;
+    left: 2252px;
+    right: 20px;
+}
+.scroll-body p{
+    font-family: Gadugi;
+    font-size: 32px;
+    font-weight: 1000;
+    padding: 25px 20px;
+    color: white;
+}
+.scroll-body button{
+    font-family: Gadugi;
+    height: 60px;
+    width: 180px;
+    background: rgb(255, 255, 255, 0);    
+    border: 2px solid white;
+    border-radius: 5px;
+    font-size: 20px;
+    transition: 0.3s;
+    color: white;
+    position: absolute;
+    bottom: 20px;
+    left: 25px;
+    transition: .2s;
+}
+.scroll-body button:hover{
+    height: 70px;
+    width: 190px;
+}
